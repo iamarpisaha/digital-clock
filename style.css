@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #08001f, #30197d);
+  color: #ffffff;
+  position: relative;
+}
+
+.container {
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock {
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 0, 255, 0.11);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(40px);
+}
+
+.clock span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.clock span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#hrs::after {
+  content: "HOURS";
+}
+#min::after {
+  content: "MINUTES";
+}
+#sec::after {
+  content: "SECONDS";
+}
+.container::before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: #f41b75;
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+}
+
+.container::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background: #419aff;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+}
+
+/* Reset and Base Styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Glass Morphism Container */
+/* .hero {
+  width: 100%;
+  max-width: 800px;
+}
+
+.container {
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+} */
+
+/* Clock Styles */
+/* .clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.clock span {
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock span:nth-child(2n + 1) {
+  min-width: 120px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 5px;
+  backdrop-filter: blur(5px);
+} */
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .clock span {
+    font-size: 3.5rem;
+  }
+
+  .clock span:nth-child(2n + 1) {
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  .clock {
+    gap: 8px;
+  }
+
+  .clock span {
+    font-size: 2.5rem;
+  }
+
+  .clock span:nth-child(2n + 1) {
+    min-width: 70px;
+    padding: 5px;
+  }
+} */
+
+/* Animation Effects */
+/* @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* #sec {
+  animation: pulse 1s infinite;
+} */
+
+/* Optional: AM/PM Indicator */
+/* /* Uncomment if you want to add AM/PM* */
+/* .clock::after {
+  content: attr(data-period);
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10px;
+  align-self: flex-end;
+  padding-bottom: 15px;
+} */
