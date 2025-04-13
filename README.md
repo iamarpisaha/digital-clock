@@ -4,6 +4,8 @@
 
 A modern, responsive digital clock with glass morphism UI design. This clock displays hours, minutes, and seconds in real-time with smooth animations.
 
+### Live demo : https://iamarpisaha.github.io/digital-clock/
+
 ## Features
 
 - 🕒 Real-time updating digital clock
